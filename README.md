@@ -1,8 +1,5 @@
 # **ETOX**
-<br></br>
 ## Objective
----
-<br></br>
 
 - Write a program that first prompts the user for a value of x, reads x (as a double) and then computes and prints the value of ex without using either of the methods exp or pow from the Math class. The value of ex is given by the following power series
 
