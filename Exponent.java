@@ -4,7 +4,7 @@ class Exponent {
     public static void main(String[] args) {
         // Input
         System.out.println("What's your x value?");
-        int x = In.getInt();
+        double x = In.getInt();
         exponent(x, x);
     }
 
@@ -17,5 +17,9 @@ class Exponent {
             }
 
         System.out.println(output);
+    }
+
+    public static void factorial () {
+        // TODO take a number (n), multiply by (n - 1), then (n - 1) - 1, until 1
     }
 }
