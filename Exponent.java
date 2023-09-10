@@ -21,13 +21,10 @@ class Exponent {
     }
 
     public static void factorial (double factor) {
-        
-        System.out.println(factor);
 
-        double finito = factor;
         double fact = 1;
 
-        for (int i = 1; i <= finito; i++) {
+        for (int i = 1; i <= factor; i++) {
             fact = fact*i;
         }
 
