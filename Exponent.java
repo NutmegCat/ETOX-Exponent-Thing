@@ -19,7 +19,7 @@ class Exponent {
             count++;
         }
 
-        // output
+        //* output
         System.out.println("The number is " + finito);
     }
 
