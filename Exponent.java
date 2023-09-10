@@ -21,8 +21,7 @@ class Exponent {
     }
 
     public static void factorial (double factor) {
-        // TODO take a number (n), multiply by (n - 1), then (n - 1) - 1, until 1
-
+        
         System.out.println(factor);
 
         double finito = factor;
