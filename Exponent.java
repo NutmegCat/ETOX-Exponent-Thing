@@ -2,32 +2,52 @@
 
 class Exponent {
     public static void main(String[] args) {
-        // Input
+        // input
         System.out.println("What's your x value?");
         double x = In.getInt();
-        exponent(x, x);
-        factorial(x);
+
+        // vars
+        double term = x;
+        double finito = 1;
+        double count = 1;
+        final double LOW_TERM = 1/exponent(10, 15);
+
+        // make terms
+        while (term > LOW_TERM * (Math.abs(finito))) {
+            term = exponent(x, count) / factorial(count);
+            finito += term;
+            count++;
+        }
+
+        // output
+        System.out.println("The number is " + finito);
     }
 
-    public static void exponent (double base, double power) {
+    public static double exponent (double base, double power) {
         
         double output = 1;
 
-        for (int i = 0; i < power; i++) {
-                output *= base;
-            }
-
-        System.out.println(output);
-    }
-
-    public static void factorial (double factor) {
-
-        double fact = 1;
-
-        for (int i = 1; i <= factor; i++) {
-            fact = fact*i;
+        // if base is 0
+        if (base == 0) {
+            return 1;
         }
 
-        System.out.println(fact);
+        // exponent
+        for (int i = 0; i < power; i++) {
+                output *= base;
+        }
+
+        return output;
+    }
+
+    public static double factorial (double factor) {
+
+        double digit = factor;
+
+        for (double i = factor - 1; i > 0; i--) {
+            digit *= factor - i;
+        }
+
+        return digit;
     }
 }
