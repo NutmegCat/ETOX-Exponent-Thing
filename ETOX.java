@@ -1,6 +1,6 @@
 // Aaron Prince Anu
 
-class Exponent {
+class ETOX {
     public static void main(String[] args) {
         // input
         System.out.println("What's your x value?");
