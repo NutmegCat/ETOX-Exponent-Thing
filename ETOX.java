@@ -47,7 +47,6 @@ class ETOX {
         for (double i = factor - 1; i > 0; i--) {
             digit *= factor - i;
         }
-
         return digit;
     }
 }
