@@ -13,14 +13,14 @@ class ETOX {
         final double LOW_TERM = 1/exponent(10, 15);
 
         // make terms
-        while (term > LOW_TERM * (Math.abs(finito))) {
+        while (Math.abs(term) >= LOW_TERM * (Math.abs(finito))) {
             term = exponent(x, count) / factorial(count);
             finito += term;
             count++;
         }
 
         //* output
-        System.out.println("The number is " + finito);
+        System.out.println("\nThe number is " + finito + "\ne^" + x + " = " + finito);
     }
 
     public static double exponent (double base, double power) {
